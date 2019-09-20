@@ -31,7 +31,7 @@
                 <context id="time" if="empty($Time)"/>
                 <context id="cost"/>
             </input>
-        </context>
+        </context> 
         
         <context id="cost">
             <var name="Fmt" value='fmt($Date, "EEEE, MMMM dd", $req_lang)'/>
