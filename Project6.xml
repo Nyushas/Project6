@@ -3,7 +3,7 @@
         <output value="Привет!"/>
     </input>
     
-    <input pattern="* (стоимост*|цен*|сколько стоит|почем) [билет] {[[на] [фильм] $Text] [$Date] [$Time]}">
+    <input pattern="* (цен*|сколько стоит|почем|стоимость билет*) {[[на] [фильм] $Text] [$Date] [$Time]}">
             <context id="cost" if="full($Text) and full($Date) and full($Time)"/>
 
         <context if="empty($Text)" modal="true">
