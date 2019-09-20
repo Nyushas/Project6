@@ -1,4 +1,10 @@
 <context>
+    <context>
+    <input pattern="*(привет| хелло | Добр* * |Здравствуй*) *">
+        <output value="Привет!"/>
+    </input>
+</context>
+    
     <input pattern="* (стоимост*|цен*|сколько стоит|почем) [билет] {[[на] [фильм] $Text] [$Date] [$Time]}">
             <context id="cost" if="full($Text) and full($Date) and full($Time)"/>
 
